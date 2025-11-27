@@ -8,6 +8,14 @@ body{
     background-color: hsl(208, 25%, 90%);
     font-family: 'Comic Sans';
     font-size: 13px;
+    height:100%;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+html{
+    height:100%;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 .box{
@@ -18,13 +26,13 @@ body{
 .card{
     border-color: midnightblue;
 
-    max-width:100%;
-    max-height:1000px;
-
+    max-width:99%;
+    max-height:100%;
     display:flex;
     margin: 0 auto;
     margin-top:70px;
     flex-direction:row;
+    height:100%
 }
 
 .bar{
