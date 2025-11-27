@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: url('Ldfcomicsans-jj7l.ttf');
+    font-display: swap;
+}
+
 body{
     background-color: hsl(208, 25%, 90%);
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Comic Sans';
     font-size: 13px;
 }
 
@@ -28,6 +34,7 @@ body{
     position:fixed;
     width:100%;
     top:0px;
+    font-size:30px
 }
 
 .About{
