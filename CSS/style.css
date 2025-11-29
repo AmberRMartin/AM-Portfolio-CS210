@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/decor/background.jpg');
     background-size: 100%;
     font-family: 'Comic Sans';
     font-size: 13px;
@@ -25,11 +25,11 @@ html{
     /* background-image:url('../images/background.jpg'); */
     background-repeat:no-repeat;
     border: 20px solid transparent;
-    border-image:url('../images/box\ border\ 1.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 1.png') 30 stretch;
 }
 
 .bar{
-    background-image: url('../images/nav\ bar\ decal.png'), url('../images/background.jpg');
+    background-image: url('../images/decor/nav\ bar\ decal.png'), url('../images/decor/background.jpg');
     background-position:center;
     background-size: 50%, 110%;
     background-repeat:no-repeat;
@@ -53,8 +53,8 @@ html{
     height:100%;
 }
 .card2{
-    border-image:url('../images/box\ border\ 1.png') 30 stretch;
-    background-image: url('../images/flower\ decal\ 3.png'), url('../images/flower\ decal\ 4.png');
+    border-image:url('../images/decor/box\ border\ 1.png') 30 stretch;
+    background-image: url('../images/decor/flower\ decal\ 3.png'), url('../images/decor/flower\ decal\ 4.png');
     background-position-x:left, right;
     background-position-y: bottom, top;
     background-size:23%;
@@ -72,17 +72,17 @@ html{
 }
 
 #Work1{
-    height:70%;
+    height:flex;
     width:40%;
-    border-image:url('../images/box\ border\ 2.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 2.png') 30 stretch;
     background-image:none;
 }
 
 #Work2{
-    height:70%;
+    height:flex;
     width:40%;
     align-self: flex-end;
-    border-image:url('../images/box\ border\ 3.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 3.png') 30 stretch;
     background-image:none;
 }
 
@@ -94,7 +94,7 @@ html{
 }
 
 .aboutTitle{
-    border-image:url('../images/box\ border\ 3.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 3.png') 30 stretch;
     height:10%;
     font-size:20px;
     display:flex;
@@ -103,12 +103,12 @@ html{
 }
 
 .aboutInfo{
-    border-image:url('../images/box\ border\ 2.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 2.png') 30 stretch;
     height:90%;
-    font-size:15px;
-    padding:45px;
-    background-image:url('../images/flower\ decal\ 1.png'), url('../images/flower\ decal\ 2.png');
-    background-size:70%;
+    font-size:17px;
+    padding:55px;
+    background-image:url('../images/decor/flower\ decal\ 1.png'), url('../images/decor/flower\ decal\ 2.png');
+    background-size:60%;
     background-position-y:bottom, top;
     background-position-x: right,left;
 }
@@ -120,13 +120,18 @@ html{
     }
     .card2{
         height:100%;
+        padding:10px;
     }
     .About{
         flex-basis:20%;
     }
+    .aboutInfo{
+        background-size:20%;
+        padding:30px;
+    }
     .Work{
         flex-basis:80%;
-        padding:15px;
+        padding:5px;
     }
     #Work1 #Work2{
         height:60%;
