@@ -5,6 +5,7 @@
 }
 
 body{
+    display: flex;
     background-image: url('../images/decor/background.jpg');
     background-size: 100%;
     font-family: 'Comic Sans';
@@ -65,7 +66,7 @@ html{
 
 .Work{
     display:flex;
-    flex-basis:75%;
+    /* flex-basis:75%; */
     justify-content: space-around;
     padding:0px;
     border-image:none;
@@ -112,6 +113,25 @@ html{
     background-position-y:bottom, top;
     background-position-x: right,left;
 }
+
+.image-box{
+    width: 350px;
+    height: 350px;
+}
+.image-box img{
+    width:100%;
+    height:100%;
+}
+.image-bar{
+    display: block;
+    margin-top: -50px;
+    height:80px;
+    width:80px;
+    margin-left: 80%;
+    margin-right: 20%;
+}
+
+
 
 @media (max-width:575px){
     .card{
