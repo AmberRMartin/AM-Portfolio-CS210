@@ -23,10 +23,9 @@ html{
 .box{
     border:4px solid;
     margin: 1px;
-    /* background-image:url('../images/background.jpg'); */
     background-repeat:no-repeat;
     border: 20px solid transparent;
-    border-image:url('../images/decor/box\ border\ 1.png') 30 stretch;
+    border-image:url('../images/decor/box\ border\ 1.png') 30 stretch; /* default border */
 }
 
 .bar{
@@ -35,7 +34,6 @@ html{
     background-size: 50%, 110%;
     background-repeat:no-repeat;
     background-position-y: -18px;
-
     height:60px;
     position:fixed;
     width:97%;
@@ -46,13 +44,15 @@ html{
 .card{
     border:0px;
     max-width:100%;
+    min-height: 100%;
+
     display:flex;
     margin: 0 auto;
     margin-top:100px;
     flex-direction:row;
     flex-basis:100%;
-    height:100%;
 }
+
 .card2{
     border-image:url('../images/decor/box\ border\ 1.png') 30 stretch;
     background-image: url('../images/decor/flower\ decal\ 3.png'), url('../images/decor/flower\ decal\ 4.png');
@@ -60,27 +60,27 @@ html{
     background-position-y: bottom, top;
     background-size:23%;
     flex-direction:column;
-    width:100%;
+    min-height: 100%;
     display:flex;
 }
 
 .Work{
     display:flex;
-    /* flex-basis:75%; */
+    flex-basis:75%;
     justify-content: space-around;
     padding:0px;
     border-image:none;
 }
 
 #Work1{
-    height:flex;
+    height:fit-content;
     width:40%;
     border-image:url('../images/decor/box\ border\ 2.png') 30 stretch;
     background-image:none;
 }
 
 #Work2{
-    height:flex;
+    height:fit-content;
     width:40%;
     align-self: flex-end;
     border-image:url('../images/decor/box\ border\ 3.png') 30 stretch;
@@ -130,8 +130,15 @@ html{
     margin-left: 80%;
     margin-right: 20%;
 }
-
-
+.image-about{
+    display:block;
+    height:250px;
+    width: 250px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
 
 @media (max-width:575px){
     .card{
