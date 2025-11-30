@@ -55,9 +55,9 @@ html{
 .card2{
     border-image:url('../images/decor/box\ border\ 1.png') 30 stretch;
     background-image: url('../images/decor/flower\ decal\ 3.png'), url('../images/decor/flower\ decal\ 4.png');
-    background-position-x:left, right;
+    background-position-x:right, left;
     background-position-y: bottom, top;
-    background-size:23%;
+    background-size:30%;
     flex-direction:column;
     display:flex;
     height:96%;
@@ -113,7 +113,7 @@ html{
     background-image:url('../images/decor/flower\ decal\ 1.png'), url('../images/decor/flower\ decal\ 2.png');
     background-size:60%;
     background-position-y:bottom, top;
-    background-position-x: right,left;
+    background-position-x: left,right;
 }
 
 .image-box{
