@@ -71,18 +71,20 @@ html{
     border-image:none;
     height:50%;
     margin:30px;
+    font-size: 15px;
+    flex-direction: row;
 }
 
 #Work1{
     height:fit-content;
-    width:40%;
+    width:41%;
     border-image:url('../images/decor/box\ border\ 2.png') 30 stretch;
     background-image:none;
 }
 
 #Work2{
     height:fit-content;
-    width:40%;
+    width:41%;
     align-self: flex-end;
     border-image:url('../images/decor/box\ border\ 3.png') 30 stretch;
     background-image:none;
@@ -140,7 +142,16 @@ html{
     margin-right:auto;
     margin-top:auto;
     margin-bottom:auto;
+}
 
+#img-double{
+    height:49%;
+    width:49%;
+}
+
+#img-single{
+    height:100%;
+    width:100%
 }
 
 @media (max-width:575px){
@@ -150,7 +161,7 @@ html{
     }
     .card2{
         height:100%;
-        padding:10px;
+        padding:0px;
     }
     .About{
         flex-basis:20%;
@@ -161,11 +172,10 @@ html{
     }
     .Work{
         flex-basis:80%;
-        padding:5px;
     }
     #Work1 #Work2{
         height:60%;
-        width:50%;
+        width:60%;
     }
     .bar{
         background-position-y: 8px, -20px;
@@ -173,7 +183,11 @@ html{
         background-repeat:no-repeat;
     }
     .image-about{
-        height:150px;
-        width:150px;
+        height:100%;
+        width:100%;
     }
+    #img-double{
+    height:100%;
+    width:100%;
+}
 }
