@@ -25,3 +25,17 @@ lay.addEventListener('click', function(){
     }
 
 });
+
+const ded = document.getElementById('ded'); //get image
+let toggle2 = true;
+
+ded.addEventListener('click', function(){
+    toggle2 = !toggle2;
+    if(toggle2)
+    {
+        ded.src = 'images/decor/ded_1.png';
+    }else{
+        ded.src = 'images/decor/ded_2.png';
+    }
+
+});
